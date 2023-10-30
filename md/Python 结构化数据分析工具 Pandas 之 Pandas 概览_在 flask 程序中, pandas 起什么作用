@@ -1,0 +1,75 @@
+> 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 [blog.csdn.net](https://blog.csdn.net/ffella/article/details/124878574)
+
+Pandas 是做数据分析最核心的一个工具。我们要先了解数据分析，才能更好的明白 Pandas，因此，本文分为两个部分：
+
+*   1. 数据分析
+*   2.Pandas 概述
+
+1. 数据分析
+-------
+
+### 1.1 数据分析的背景
+
+随着计算机的大规模普及，网络数据有了一个`爆发性地增长`，驱使着人们进入了一个崭新的时代：`大数据时代`
+
+**思考一个问题** 既然数据这么多，怎么才能快速地拿到`有价值的数据`呢？
+
+`数据分析`就可以从海量数据中挖掘潜藏的有价值的信息，帮助企业或个人`预测未来的趋势和行为`。所以，不管从事什么行业，如果掌握了数据分析的能力，就会在其岗位上非常具有竞争力！
+
+### 1.2 什么是数据分析
+
+数据分析是使用`统计分析方法`对数据进行分析，从中提取`有用信息`和`形成结论`，并加以详细研究和概括总结的过程。
+
+数据分析的目的是：将`隐藏`在一大批`看似杂乱无章`的数据信息集中`提炼`出来`有用的数据`，以找出所研究对象的内在规律。
+
+在`统计学领域`中，数据分析可以划分为如下`三类`：
+
+<table><thead><tr><th>类目</th><th>描述</th></tr></thead><tbody><tr><td>描述性数据分析</td><td>从一组数据中，可以<code>摘要</code>并且<code>描述</code>这份数据的集中和离散情形。</td></tr><tr><td>探索性数据分析</td><td>从<code>海量数据</code>中找出规律，并产生<code>分析模型</code>和<code>研究假设</code>。</td></tr><tr><td>验证性数据分析</td><td>验证科研假设测试所需的条件是否达到，以保证验证性分析的<code>可靠性</code>。</td></tr></tbody></table>
+
+### 1.3 数据分析的应用场景
+
+<table><thead><tr><th>应用</th><th>方法及其结果</th></tr></thead><tbody><tr><td><code>营销</code>方面</td><td>通过会员卡形式获得消费者的<code>个人信息</code>，以便对消费者的购买信息进一步研究其<code>购买习惯</code>，发现各类有价值的<code>目标群体</code>。</td></tr><tr><td><code>医疗</code>方面</td><td>医生通过<code>记录</code>和<code>分析</code>婴儿的心跳来监视早产婴儿和患病婴儿的情况，并针对婴儿的身体可能会出现的不适症状做出<code>预测</code>，这样可以帮助医生更好的救助患儿。</td></tr><tr><td><code>零售</code>方面</td><td>在美国零售业曾经有这样一个传奇故事，某家商店将纸尿裤和啤酒并排放在一起销售，结果纸尿裤和啤酒的销量双双增长！</td></tr><tr><td><code>网络安全</code>方面</td><td>新型的病毒防御系统可以使用<code>数据分析技术</code>，建立潜在攻击识别<code>分析模型</code>，监测<code>大量</code>网络活动数据和相应的访问行为，识别可能进行入侵的可疑模式。</td></tr><tr><td><code>交通物流</code>方面</td><td>用户可以通过业务系统和 GPS 定位系统<code>获得数据</code>，使用数据构建交流状况<code>预测分析模型</code>，有效预测实时路况、物流状况、车流量、货物吞吐量，进而提前补货，制定库存管理策略。</td></tr><tr><td>## 1.4 数据分析的流程</td><td></td></tr><tr><td>数据分析大致可以分为以下<code>五个阶段</code>：</td><td></td></tr><tr><td><p><img class="" src="https://img-blog.csdnimg.cn/img_convert/66e7f970e23a317a1d2cb385c8e7d93d.webp?x-oss-process=image/format,png"></p></td><td></td></tr><tr><td>## 1.5 为什么选择 Python 做数据分析</td><td></td></tr><tr><td>== 问：==</td><td></td></tr></tbody></table>
+
+> 为什么选择`Python`做数据分析?
+
+![在这里插入图片描述]([img-blog.csdnimg.cn/48a88aa3966…](https://link.juejin.cn?target=https%3A%2F%2Fimg-blog.csdnimg.cn%2F48a88aa3966c44c5a800e278746d001e.png%23pic_center "img-blog.csdnimg.cn/48a88aa3966…") =50%x80%) == 答：==
+
+> 选择 Python 做数据分析，主要考虑的是 Python`具有以下优势`：
+
+*   语法`简单`精炼，适合初学者
+*   拥有一个`巨大且活跃`的科学计算社区（强大的后援团！）
+*   拥有强大的`通用`编程能力
+*   人工智能时代的通用语言
+*   `方便`对接`其它语言`（Python 是一种胶水语言）
+
+2. Pandas 概述
+------------
+
+### 2.1 Pandas 简介
+
+Python 本身的数据分析功能并不强，需要安装一些`第三方的扩展库`来`增强`它的能力。其中，针对`结构化数据`（可简单理解为`二维表`数据，或我们常用的`Excel表`格数据）分析能力最强的第三方扩展库就是`Pandas`
+
+### 2.2 Pandas 来源
+
+Pandas 是 python 的一个数据分析包，最初由 AQR Capital Management 于`2008年4月开发`，并于`2009年底开源`出来的，目前由专注于 Python 数据包开发的`PyData`开发`team`继续开发和维护，属于 PyData 项目的一部分。Pandas`最初`被作为`金融数据分析工具`而开发出来，因此，pandas 为`时间序列分析`提供了很好的支持。 Pandas 的`名称`来自于`面板数据`（panel data）和 python`数据分析`（data analysis）。
+
+### 2.3 Pandas 特点
+
+*   `Pandas` 是`基于NumPy` 的一种工具包，是为解决数据分析任务而创建的。但 Numpy 只能处理数字，若想处理其他类型的数据，如字符串，就要用到 Pandas 了。
+*   `Pandas` 纳入了大量库和一些标准的数据模型，提供了`高效`地`操作大型数据集`所需的工具。
+*   `Pandas`提供了大量能使我们`快速便捷`地`处理数据`的`函数`和`方法`，是使 Python 成为强大而高效的数据分析语言的重要因素之一。
+*   Pandas 可以从各种文件格式比如`CSV`、`JSON`、`SQL`、Microsoft `Excel` 导入数据。
+*   Pandas 可以对各种数据进行运算操作，比如归并、再成形、选择，还有`数据清洗`和`数据加工`特征。
+*   Pandas 广泛应用在`学术`、`金融`、`统计学`等各个数据分析领域。
+
+### 2.4 Pandas 最主要的两种数据结构：
+
+Pandas 的主要数据结构是 `Series` （一维数据）与 `DataFrame`（二维数据），这两种数据结构足以处理金融、统计、社会科学、工程等领域里的大多数典型用例。
+
+*   `Series` 是一种类似于一维数组的对象，它由一组`数据`（各种 Numpy 数据类型）以及一组与之相关的数据标签（即`索引`）组成。
+
+![](https://img-blog.csdnimg.cn/img_convert/4fc4df4c7466c6c8d2007ad95b53a1b4.webp?x-oss-process=image/format,png)
+
+*   `DataFrame` 是一个`表格型的数据结构`，它含有一组`有序的列`，每列可以是不同的值类型（数值、字符串、布尔型值）。DataFrame 既有`行索引`也有`列索引`，它可以被看做由 `Series 组成的字典`（共同用一个索引）。
+
+![](https://img-blog.csdnimg.cn/img_convert/9c43f9ce8980cd03d83b9d23739ae571.webp?x-oss-process=image/format,png)
